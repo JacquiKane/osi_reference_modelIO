@@ -1,0 +1,176 @@
+/** @format */
+
+.wrapper {
+  text-align: start;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  text-align: left;
+}
+
+.heading112 {
+  background-color: blue;
+  color: #edebeb;
+  font-size: 150%;
+  text-align: center;
+  padding: 3%;
+  margin-bottom: 1%;
+}
+
+.subheading112 {
+  background-color: blue;
+  color: #edebeb;
+  text-align: center;
+  padding: 3%;
+  margin-bottom: 1%;
+}
+
+.asideimage {
+  width: 80%;
+  height: auto;
+}
+.info {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 0 0 25%;
+}
+
+.about {
+  display: inline-block;
+  flex: 0 1 70%;
+  padding: 5px;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  border: 2px solid blue;
+  background-color: #edebeb;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.media {
+  display: none;
+}
+.thumbtacked1 {
+  position: relative;
+  top: 15px;
+  left: 2px;
+  -ms-transform: rotate(30deg);
+  transform: rotate(5deg);
+  font-size: 36px;
+  color: rgb(100, 100, 100);
+  padding: -10px;
+  margin: -10px;
+}
+
+.thumbtacked2 {
+  position: relative;
+  top: -25px;
+  left: 2px;
+  padding: -10px;
+  margin: -10px;
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  font-size: 36px;
+  color: rgb(51, 53, 211);
+}
+
+.thumbtacked3 {
+  position: relative;
+  top: -20px;
+  left: 2px;
+  padding: -10px;
+  margin: -10px;
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  font-size: 36px;
+  color: #1dca7a;
+}
+.mediaContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mediaContentItemImg {
+  flex: 1 1 15%;
+  padding-right: 5px;
+  display: inline;
+}
+
+.mediaContentProCon img {
+  width: 30%;
+  min-width: 150px;
+  display: inline;
+  border-radius: 15px;
+  padding: 0px;
+  margin-right: 5px;
+  float: left;
+}
+.mediaContentProCon {
+  /* flex: 1 1 60%; */
+  border: 2px solid blue;
+  border-radius: 15px;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 300px;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+}
+
+.catbtn {
+  width: 50px;
+}
+
+.wifibtn {
+  width: 100px;
+}
+
+.modalimg {
+  width: 70px;
+  height: auto;
+  display: inline;
+}
+
+table,
+th,
+td {
+  border: 1px solid blue;
+}
+
+.fyiLabel {
+  margin-top: -10px;
+  font-style: italic;
+  float: right;
+  font-size: x-small;
+  vertical-align: super;
+}
+
+@media all and (max-width: 760px) {
+  .wrapper {
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: safe;
+  }
+  .info {
+    flex: 0 0 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5px;
+  }
+
+  .about {
+    flex: 1 1 100%;
+    padding: 0px 5px;
+  }
+}

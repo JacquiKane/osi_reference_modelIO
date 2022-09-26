@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO OSI Model</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modalstyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Heading -->
+    <h2 class="heading112">International Standard's Organisation Open System Interconnect Model
+    </h2>
+    <!-- Flex Container -->
+    <div class= "wrapper">
+    <aside class="info">
+        <p>
+        <button style="width: 155px; border: 0px;" onclick="displaygeneral()">Model? What model?</button> Click to explore the layer of the ISO's Open Systems Interconnect model.
+
+        </p>
+
+        <button class="layerbtn" id="applicationid" onclick="displayapplication()">Application<span class="fyiLabel">7</span></button> 
+        <button class="layerbtn" id="presentationid" onclick="displaypresentation()">Presentation<span class="fyiLabel">6</span></button>
+        <button class="layerbtn" id="sessionid" onclick="displaysession()">Session<span class="fyiLabel">5</span></button>    
+        <button class="layerbtn" id="transportationid" onclick="displaytransportation()">Transport<span class="fyiLabel">4</span></button>              
+        <button class="layerbtn" id="networkid" onclick="displaynetwork()">Network<span class="fyiLabel">3</span></button>              
+
+        <button class="layerbtn" id="datalinkid" onclick="displaydatalink()">Data Link<span class="fyiLabel">2</span></button> 
+        <button class="layerbtn" id="physicalid" onclick="displayphysical()">Physical<span class="fyiLabel">1</span></button> 
+    </aside>
+  
+        <article class="about">
+            <div class="media" id="generaldiv" style="display: inline-block;">
+                <div class="mediaContent">
+              
+                    <div class="mediaContentProCon"><i class="fa fa-thumb-tack" style="font-size:48px;color:blue;"></i>
+                <p><img src="images/osi.jpg"><h2>Why OSI?</h2> To get hardware and software manufacturers to agree on a framework for developing networking technologies, so devices could work together.</p>
+              
+            
+                </div>
+
+                    <div class="mediaContentProCon">
+                        <h2>OSI Model Versus TCP/IP Model</h2>
+                    <p>The OSI Reference Model was intended to serve as the foundation for the establishment of a widely-adopted suite of protocols that would be used for networking, and the Internet. This was called the OSI Protocol Suite.</p>
+                    <p>
+                    However, the rise in popularity of the Internet and its TCP/IP protocols made the TCP/IP model more popular - TCP/IP won. </p>
+                    </div>
+                    <div class="mediaContentProCon">
+                        <h2>OSI Settles Network Complexity</h2>
+                    <p>
+                    The OSI model became a medium for explaining how networks function.  Even if technologies are not designed to match the OSI model, many are described in terms of how they fit into its layers. This includes networking protocols, software applications, and hardware devices, like switches and routers. </p>
+            
+               </div>
+
+                    </div>
+
+        
+            </div>
+
+                <div class="media" id ="applicationdiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                     <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div> 
+                          <h2>Application Layer</h2>
+                        <img src="images/computeruser.jpg">
+                        <span>The application layer is for end-user software like web browsers and email. It provides protocols for software to send and receive information and present data to users.</span>
+                    
+                    </div>
+
+<div class="mediaContentProCon">
+    <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+    <h2>Protocols</h2>
+    <p>
+        Application layer protocols include the Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol (SMTP), and Domain Name System (DNS). 
+    </p>
+    </div>
+    <div class="mediaContentProCon">
+        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Key Responsibilities</h2>
+        <p>  The Application Layer          <ul>
+<li>provides a facility for users to exchange e-mail</li>
+<li>enables file retrieval from a remote computer</li>
+<li>enables remote logins</li>
+        </ul> 
+
+            This layer serves as a window for users and application processes to access network services.
+                    </p>
+             </div>
+                </div>
+                </div>
+              
+
+                <div class="media" id ="presentationdiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                          <h2>Presentaton Layer</h2>
+                        <img src="images/presentation.png">
+                        <span>The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt, and compress data to be correctly exchanged. </span>
+                    
+                    </div>
+
+
+<div class="mediaContentProCon">
+    <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+    <h2>Algorithms</h2>
+    <p>
+        The presentation layer takes care of any issues in changing transmitted data to a format different from the original format. This layer incorporates a lot of data conversion algorithms and character translation functions. 
+    </p>
+    </div>
+    <div class="mediaContentProCon">
+        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Encryption</h2>
+        <p>If two or more devices are communicating over an encrypted connection, presentation layer is responsible for adding encryption on the sender’s end and decoding the encryption on the receiver’s end so that it can give the application layer unencrypted, readable data.
+       
+                    </p>
+             </div>
+
+             <div class="mediaContentProCon">
+                <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                <h2>Protocols</h2>
+                <p>The Presentation layer deals with SSL, HTTP/ HTML (agent), FTP (server), AppleTalk Filing Protocol,Telnet.
+                            </p>
+                     </div>
+
+             </div>
+                </div>               
+                
+                
+                <div class="media" id ="sessiondiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                          <h2>Session Layer</h2>
+                        <img src="images/session.png">
+                        <span>The session layer controls connections between multiple computers, or sessions. This layer establishes, controls and ends the sessions between local and remote applications.</span>
+                    
+                    </div>
+
+<div class="mediaContentProCon">
+    <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+    <h2>Protocols</h2>
+    <p>
+        Sessions are most commonly implemented on Web browsers using protocols such as the Zone Information Protocol, the AppleTalk Protocol and the Session Control Protocol. These protocols also manage session restoration through checkpointing and recovery.  
+    </p>
+    </div>
+    <div class="mediaContentProCon">
+        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Responsibilities</h2>
+        <p>The session layer 
+            <ul>
+                <li>supports full-duplex and half-duplex operations</li>
+                <li>creates procedures for checkpointing, restart and termination</li>
+                <li>synchronizes information from different sources</li>
+            </ul> 
+            Sessions are implemented in live TV, audio and video streams - different sources are merged together using Session Layer techniques.
+                    </p>
+             </div>
+                </div>
+                </div>
+            
+
+                <div class="media" id ="transportationdiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                            <h2>Transport Layer</h2>
+                      <p>
+                        <img src="images/transport.png">
+                     
+                        The Transport layer deals with point-to-point communication - managing, establishing, and closing communication between two specific networked devices.
+                    </p>
+                    </div>
+                <div class="mediaContentProCon">
+                    <div class="thumbtacked2"><i class="fa fa-thumb-tack"></i></div>
+                    <h2>Protocols</h2>
+                    <p>
+                        This layer is also responsible for flow control and making sure that segmented data is delivered over the network in the correct sequence.
+                            
+                            The Transport layer uses transmission control protocol (TCP) and user data protocol (UDP) 
+</p></div>
+
+
+
+             <div class="mediaContentProCon">
+                <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+                <h2>Responsibilities</h2>
+                <p>The Transport layer oversees
+                    <ul>
+                        <li>flow control, insures packets are transmitted and received at a supportable rate</li>
+                        <li>assembly, insuring packets transmitted have been received and assembled in the correct order</li>
+                        <li>acknowledgement, providing heads-up to transmitter upon reception of error-free packet</li>
+                        <li>requesting re-transmission to transmitter if defective packet received</li>
+                    </ul>
+             
+                </p>
+                </div>
+
+
+                </div>
+                </div>
+
+                <div class="media" id ="networkdiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                            <h2>Network Layer</h2>
+                        <p>
+                        <img src="images/network.png">
+                        The network layer provides data routing paths for network communication. Data is transferred to the receiving device in the form of packets via logical network paths in an ordered format.</p>
+                    
+                    </div>
+                <div class="mediaContentProCon">
+                    <div class="thumbtacked2"><i class="fa fa-thumb-tack"></i></div>
+                    <h2>Responsibilities</h2>
+                    <p>
+                        Logical connection setup, data forwarding, routing and delivery error reporting are the network layer’s primary responsibilities. 
+</p></div>
+<div class="mediaContentProCon">
+    <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+    <h2>Backbone of OSI Model</h2>
+    <p>
+        The network layer is the backbone of the OSI Model. It selects and manages the best logical path (virtual circuit) for data transfer between nodes by assigning destination and source IP addresses to each data segment. 
+    </p>
+    </div>
+    <div class="mediaContentProCon">
+        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Protocols</h2>
+        <p>The network layer uses ARP (Address Resolution Protocol), ICMP (Internet Control Message Protocol), IPV4 (IP Version 4 addressing) and IPV6 (IP Version 6 addressing).
+                    </p>
+             </div>
+                </div>
+                </div>
+
+
+                <div class="media" id ="datalinkdiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                                              <h2>DataLink Layer</h2>
+                        <img src="images/datalink.png">
+                        <span>The data link layer of the OSI consists of two sublayers - the Media Access Control (MAC) sublayer and the Logical Link Control (LLC) sublayer. The MAC sublayer controls device interaction. The LLC sublayer deals with addressing.</span>
+                    
+                    </div>
+                <div class="mediaContentProCon">
+                    <div class="thumbtacked2"><i class="fa fa-thumb-tack"></i></div>
+
+                    <h2>Data Streams To Bits</h2>
+                    <p>
+                        The Data link layer is responsible for converting data streams to signals bit by bit and sending via underlying hardware. At the receiving end, the Data link layer picks up data from hardware in the form of electrical signals, assembles them in a recognizable frame format, and hands over to upper layers.
+</p></div>
+<div class="mediaContentProCon">
+    <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+    <h2>Frames</h2>
+    <p>
+        The Data-link layer takes packets from the Network Layer and encapsulates them into Frames.Then, it sends each frame bit-by-bit on the hardware. At the receiver, data link layer takes signals from hardware and assembles them into frames. 
+    </p>
+    </div>
+    <div class="mediaContentProCon">
+        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Error Detection </h2>
+        <p>Sometimes signals are not transmitted correctly, bits are flipped.These errors are detected and recovery of the bits is attempted at the Data Link layer data. It also provides error reporting to the sender.
+                    </p>
+             </div>
+                </div>
+                </div>
+
+                <div class="media" id ="physicaldiv">
+                    <div class="mediaContent">
+                 
+                    <div class="mediaContentProCon">   
+                        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+                      
+                        <img src="images/physical.png">
+                        <span>
+                            The physical layer deals with bit-level transmission between different devices and supports electrical or mechanical interfaces that connect to the network.</span>
+                    
+                    </div>
+                <div class="mediaContentProCon">
+                    <div class="thumbtacked2"><i class="fa fa-thumb-tack"></i></div>
+                    <h2>Physical Connections</h2>
+                    <p>
+                        This layer plays with most of the network’s physical connections—wireless transmission, cabling, cabling standards and types, connectors and types, network interface cards, and more —as per network requirements.
+</p></div>
+<div class="mediaContentProCon">
+    <div class="thumbtacked3"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Physical Layer</h2>
+    <h2>Translation</h2>
+    <p>
+        The Physical Layer translates the information from the data-link layer into electromagnetic signals (binary data) to send  over the wires or the wireless media. These signals are either digital signals (electrical pulses) or analog signals (continuous electromagnetic waves).
+    </p>
+    </div>
+    <div class="mediaContentProCon">
+        <div class="thumbtacked1"><i class="fa fa-thumb-tack"></i></div>
+        <h2>Efficiency</h2>
+        <p> The physical layer plays an important role in sharing available communication resources and helps avoid contention among multiple users. It also handles the transmission rate to improve the flow of data between a sender and receiver.
+                    </p>
+             </div>
+                </div>
+                </div>
+
+               </div 
+
+    </article>
+</div>
+</body>
+
+<script>
+    function hideDivs() {
+// Hide all the divs
+    }
+
+    function decorateBtn(currentBtn) {
+        currentBtn.style.border="5px solid blue";
+        currentBtn.style.boxShadow  = "10px 5px 5px blue";
+    }
+
+    function resetAllBtns(){
+        let allLayerBtns = document.querySelectorAll(".layerbtn");
+        allLayerBtns.forEach(resetBtn);
+    }
+
+    function resetBtn(currentBtn, index){
+        currentBtn.style.border="2px solid blue";
+        currentBtn.style.boxShadow  = "none";
+    }
+    function displayapplication() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#applicationdiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#applicationid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+
+    }
+
+    function displaypresentation() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#presentationdiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#presentationid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+    }
+
+    function displaysession() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#sessiondiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#sessionid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+    }
+
+
+    function displaytransportation() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#transportationdiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#transportationid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+    }
+
+    function displaynetwork() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#networkdiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#networkid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+    }
+
+
+    
+    function displaydatalink() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#datalinkdiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#datalinkid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+    }
+
+    
+    function displayphysical() {
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#physicaldiv");
+        currentDiv.style.display="block";
+        let currentBtn = document.querySelector("#physicalid");
+        resetAllBtns();
+        decorateBtn(currentBtn);
+    }
+
+    function displaygeneral() {
+        resetAllBtns();
+        let allMediaDivs = document.querySelectorAll(".media");
+        allMediaDivs.forEach(hideDiv);
+        let currentDiv = document.querySelector("#generaldiv");
+        currentDiv.style.display="block";
+    }
+
+    function hideDiv(item, index) {
+        item.style.display = "none";
+    }
+</script>
+</html>
